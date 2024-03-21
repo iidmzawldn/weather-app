@@ -1,0 +1,28 @@
+.content {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+  
+    &::before {
+      content: "";
+      background: url("/public/forest.jpg") no-repeat center center/cover;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+  }
+  
+  input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  input:focus-visible {
+    border-width: 2px;
+    border-color: #fff !important;
+    box-shadow: 0 0 1px #000 !important;
+  }
