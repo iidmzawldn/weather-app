@@ -34,7 +34,7 @@ function App() {
     setData(data);
   };
 
-  const SearchLocation = (e: React.KeyboardEvent<HTMLImageElement>) => {
+  const SearchLocation = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter") {
       fetchLocation(url);
       setLocation("");
